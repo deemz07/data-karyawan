@@ -1,0 +1,95 @@
+<?php  
+$karyawan = [
+    [
+        "nama" => "Dimas Angga Saputra",
+        "tgl" => "18 Agustus 2001",
+        "email" => "dimas@gmail.com",
+        "telp" =>  "085161126383",
+        "gambar" => "dimas.jpg"
+    ],
+    [
+        "nama" => "Chrismi Jelita",
+        "tgl" => "1 Juni 2001",
+        "email" => "ita@gmail.com",
+        "telp" =>  "081259009161",
+        "gambar" => "ita.jpg" 
+    ],
+    [
+        "nama" => "Nadila Istighfarin",
+        "tgl" => "17 Desember 1996",
+        "email" => "dila@gmail.com",
+        "telp" =>  "081334085653",
+        "gambar" => "dila.jpg"
+    ],
+    [
+        "nama" => "Tri Okto Prdianto Rachman",
+        "tgl" => "12 Oktober 1984",
+        "email" => "pedy@gmail.com",
+        "telp" =>  "085339189557",
+        "gambar" => "pedy.jpg"
+    ],
+    [
+        "nama" => "Sofi Malini",
+        "tgl" => "7 Juni 1977",
+        "email" => "sofi@gmail.com",
+        "telp" =>  "082276761977",
+        "gambar" => "sofi.jpg"
+    ],
+    [
+        "nama" => "Moh Soleh Afandi",
+        "tgl" => "22 Desember 1985",
+        "email" => "fandi@gmail.com",
+        "telp" =>  "085771140411",
+        "gambar" => "fandi.jpg"
+    ],
+    [
+        "nama" => "M Emi Sri Rahayu",
+        "tgl" => "22 September 1976",
+        "email" => "emi@gmail.com",
+        "telp" =>  "08123467933",
+        "gambar" => "emi.jpg"
+    ],
+    [
+        "nama" => "Luluk Dwi Agustina",
+        "tgl" => "21 Agustus 1975",
+        "email" => "luluk@gmail.com",
+        "telp" =>  "0818508577",
+        "gambar" => "luluk.jpg"
+    ],
+    [
+        "nama" => "Inggar Wahyu Ningtyas",
+        "tgl" => "28 November 1993",
+        "email" => "inggar@gmail.com",
+        "telp" =>  "081358808683",
+        "gambar" => "inggar.jpg"
+    ],
+    [
+        "nama" => "Veronika Sulvianti",
+        "tgl" => "11 Juli 1990",
+        "email" => "vero@gmail.com",
+        "telp" =>  "081210187229",
+        "gambar" => "vero.jpg"
+    ],
+];
+?>
+<Doctype html>
+<html>
+    <head>
+        <title>Data Karyawan</title>     
+    </head>
+    <body>
+       <h1>Data Karyawan</h1>
+
+    <?php foreach ( $karyawan as $ska) : ?> 
+       <ul>
+           <li>
+               <img src="img/<?php echo $ska["gambar"] ?>" >
+           </li>
+           <li>Nama              : <?php echo $ska["nama"] ; ?></li>
+           <li>Tanggal Lahir     : <?php echo $ska["tgl"] ; ?></li>
+           <li>Email             : <?php echo $ska["email"] ; ?></li>
+           <li>No Telepon        : <?php echo $ska["telp"] ; ?></li>
+       </ul>
+       <?php endforeach; ?>
+    </body>
+</html>
